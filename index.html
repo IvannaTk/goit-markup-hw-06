@@ -542,16 +542,125 @@
             </li>
           </ul>
         </div>
+        <div class="footer-signup-section">
+          <p class="footer-socials-text">Подпишитесь на рассылку</p>
+          <form class="footer-signup-form" name="signup-form" autocomplete="on">
+            <label>
+              <input
+                class="email-form"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button type="submit" class="sign-footer-button">
+              <span class="sign-footer-text">Подписаться</span>
+              <svg
+                class="sign-footer-icon"
+                width="24"
+                height="24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M24 0L0 13.5l7.67 2.84L19.5 5.25l-8.998 12.14.007.002-.009-.002V24l4.301-5.018L20.251 21 24 0z"
+                  fill="#fff"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <button data-modal-close class="modal-btn">
-          <svg width="11" height="11">
+          <svg class="close-icon" width="11" height="11">
             <use href="./images/icons/icomoon/sprite.svg#icon-close"></use>
           </svg>
         </button>
+        <form class="data-form" name="data-form" autocomplete="on">
+          <div role="group">
+            <p class="data-text">Оставьте свои данные, мы вам перезвоним</p>
+
+            <div class="form-field">
+              <label class="data-label" for="form-name">Имя</label>
+              <input
+                class="data-input"
+                id="form-name"
+                type="name"
+                name="name"
+                autofocus
+              />
+              <svg
+                class="data-icon"
+                width="18"
+                height="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 9a3 3 0 100-6 3 3 0 100 6zm0 1.5c-2.003 0-6 1.005-6 3v.75c0 .412.337.75.75.75h10.5c.412 0 .75-.338.75-.75v-.75c0-1.995-3.998-3-6-3z"
+                />
+              </svg>
+            </div>
+            <div class="form-field">
+              <label class="data-label" for="form-tel">Телефон</label>
+              <input
+                class="data-input"
+                id="form-tel"
+                type="tel"
+                name="phone-number"
+              />
+              <svg
+                class="data-icon"
+                width="18"
+                height="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.996 11.123l-1.838-.21a1.44 1.44 0 00-1.187.412l-1.332 1.332a10.888 10.888 0 01-4.769-4.77L6.21 6.55a1.44 1.44 0 00.412-1.187l-.21-1.824a1.448 1.448 0 00-1.44-1.28H3.72c-.818 0-1.498.68-1.448 1.497.384 6.18 5.327 11.116 11.5 11.5.817.05 1.498-.63 1.498-1.448v-1.252a1.434 1.434 0 00-1.274-1.432z"
+                />
+              </svg>
+            </div>
+            <div class="form-field">
+              <label class="data-label" for="form-email">Почта</label>
+              <input
+                class="data-input"
+                id="form-email"
+                type="email"
+                name="data-email"
+              />
+              <svg
+                class="data-icon"
+                width="18"
+                height="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 3H3c-.825 0-1.492.675-1.492 1.5l-.008 9c0 .825.675 1.5 1.5 1.5h12c.825 0 1.5-.675 1.5-1.5v-9c0-.825-.675-1.5-1.5-1.5zm-.3 3.188L9.398 9.502a.759.759 0 01-.796 0L3.3 6.188a.637.637 0 11.675-1.08L9 8.25l5.025-3.143a.637.637 0 11.675 1.08z"
+                />
+              </svg>
+            </div>
+            <div class="form-field">
+              <label class="data-label" for="form-comment">Комментарий</label>
+              <textarea
+                class="data-comment"
+                name="comment"
+                id="form-comment"
+                placeholder="Введите текст"
+              ></textarea>
+            </div>
+
+            <label class="check-label">
+              <input class="checkbox" name="agreement" type="checkbox" />
+              <span class="checkbox-icon"></span>
+              Соглашаюсь с рассылкой и принимаю
+              <a class="contract-link" href="">Условия договора</a>
+            </label>
+          </div>
+          <button class="agreement-btn" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
